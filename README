@@ -1,4 +1,14 @@
-# Idea
+# User flow
+
+```
+curl -Lv http://127.0.0.1:8080/create/bar \
+  --http2 \
+  -X POST \
+  --header "Content-Type:application/octet-stream" \
+  --data-binary @data
+```
+
+# Implementation Idea
 
 1. Have a dispacther pod offering an http endpoint
 2. Upon a POST (with a content-length)
